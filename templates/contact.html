@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+   
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="preconnect" href="https://fonts.googleapis.com/">
+      <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+      <title>Excel capstone project - Get in touch</title>
+      <!-- Main CSS File -->
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">
+      <!-- Main Color File -->
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/skins/orange.css')}}">
+
+   </head>
+   <body class="contact-page">
+
+        <div class="contact-container">
+            <h1>Get in <span>touch</span></h1>
+            <hr>
+            <div class="content-container">             
+                <div class="social-box">
+                    <div class="contact-social">
+                        <i class="icon-youtube"></i>
+                        <a href="https://www.youtube.com/@akar_excel" target="_blank">@akar_excel</a>
+                    </div>
+                    <div class="contact-social">
+                        <i class="icon-github"></i>
+                        <a href="https://github.com/AkarExcel" target="_blank">@akarexcel</a>
+                    </div>
+                    <div class="contact-social">
+                        <i class="icon-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/excel-akar" target="_blank">@excel-akar</a>
+                    </div>
+                    <div class="contact-social">
+                        <i class="icon-twitter"></i>
+                        <a href="http://twitter.com/_Akar_Excel" target="_blank">@_akar_excel</a>
+                    </div>
+                </div>
+                <form class="contact-form" action="/submit" method="post">
+                    <div class="contact-field-a">
+                        <input type="text" class="contact-name" name="name" id="name" required placeholder="name">
+                        <input type="email" class="contact-email" name="email" id="email" required placeholder="email">
+                    </div>
+                    <textarea class="contact-message" name="message" placeholder="message" id="message" cols="30" rows="10" required></textarea>
+                    <button class="btn-primary contact-btn" type="submit" >Send Message</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Template JS File -->
+        <script src="{{url_for('static', filename='js/custom.js')}}"></script>
+    </body>
+     
+     </html>

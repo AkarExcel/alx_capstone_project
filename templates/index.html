@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
    
-<!-- Mirrored from slimhamdi.net/monji/demos/light-skinswitcher-sound.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Oct 2023 16:34:40 GMT -->
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,12 +54,24 @@
          <!-- Main Home Content Ends -->
          <!-- Call To Actions Starts -->
          <div class="call-to-actions">
+             <!-- Open About Section Starts -->
+             
+            <!-- Open About Section Ends -->
             <!-- Open Portfolio Section Starts -->
             <button id="open-portfolio" class="btn-primary">
                <span class="letter-wrap">My Portfolio</span>
             </button>
 
             <!-- Open Portfolio Section Ends -->
+            <!-- Open Skills section Starts -->
+            <a href="#" id="open-skill" class="btn-secondary" style='margin-bottom: 8px;'>
+               <div>
+                  <span> Skills </span>
+                  <span> Skills </span>
+               </div>
+            </a>
+            <!-- Open Skills section Starts -->
+
             <!-- Open About Section Starts -->
             <a href="#" id="open-about" class="btn-secondary">
                <div>
@@ -97,6 +108,7 @@
                     </a>
                  </li>
               </ul>
+              <ul><li><a href='/contact'>Get in touch</a></li></ul>
            </div>
            <!-- Social Media Profiles Ends -->
          </div>
@@ -385,9 +397,76 @@
                <!-- Personal Informations Ends -->
             </div>
             <!-- About Content Ends -->
+
          </div>
       </div>
       <!-- About Section Ends -->
+
+      <!-- Skills Section Starts -->
+      <div id="skill" class="skill">
+         <div class="skill-overlay" id="skill-overlay"></div>
+         <div class="skill-content" id="skill-content">
+            <!-- Close About Section Starts -->
+            <div class="skill-close" id="skill-close">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0,0,256,256" width="30px" height="30px" fill-rule="nonzero">
+                  <g fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-size="none" style="mix-blend-mode: normal">
+                     <g transform="scale(8.53333,8.53333)">
+                        <path d="M7,4c-0.25587,0 -0.51203,0.09747 -0.70703,0.29297l-2,2c-0.391,0.391 -0.391,1.02406 0,1.41406l7.29297,7.29297l-7.29297,7.29297c-0.391,0.391 -0.391,1.02406 0,1.41406l2,2c0.391,0.391 1.02406,0.391 1.41406,0l7.29297,-7.29297l7.29297,7.29297c0.39,0.391 1.02406,0.391 1.41406,0l2,-2c0.391,-0.391 0.391,-1.02406 0,-1.41406l-7.29297,-7.29297l7.29297,-7.29297c0.391,-0.39 0.391,-1.02406 0,-1.41406l-2,-2c-0.391,-0.391 -1.02406,-0.391 -1.41406,0l-7.29297,7.29297l-7.29297,-7.29297c-0.1955,-0.1955 -0.45116,-0.29297 -0.70703,-0.29297z"></path>
+                     </g>
+                  </g>
+               </svg>
+            </div>
+            <!-- Close About Section Ends -->
+            <!-- About Content Starts -->
+            <div class="skill-content-container" id="skill-contentcontainer">
+               
+                  <div class="skill-box">
+                      <span class="skill-title">HTML</span>
+                      <div class="skill-bar">
+                          <span class="skill-per html">
+                              <span class="tooltip">90%</span>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="skill-box">
+                      <span class="skill-title">CSS</span>
+                      <div class="skill-bar">
+                          <span class="skill-per css">
+                              <span class="tooltip">70%</span>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="skill-box">
+                      <span class="skill-title">JavaScript</span>
+                      <div class="skill-bar">
+                          <span class="skill-per javascript">
+                              <span class="tooltip">50%</span>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="skill-box">
+                      <span class="skill-title">NodeJS</span>
+                      <div class="skill-bar">
+                          <span class="skill-per nodejs">
+                              <span class="tooltip">30%</span>
+                          </span>
+                      </div>
+                  </div>
+                  <div class="skill-box">
+                     <span class="skill-title">Python</span>
+                     <div class="skill-bar">
+                         <span class="skill-per python">
+                             <span class="tooltip">40%</span>
+                         </span>
+                     </div>
+                 </div>
+            </div> 
+            <!-- Skills Content Ends -->
+
+         </div>
+      </div>
+      <!-- Skills Section Ends -->
+
       <!-- Animated Layers Starts -->
       <div class="layers active-layer opacity-0">
          <div></div>
@@ -408,5 +487,4 @@
       <script src="{{url_for('static', filename='js/custom.js')}}"></script>
    </body>
 
-<!-- Mirrored from slimhamdi.net/monji/demos/light-skinswitcher-sound.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 12 Oct 2023 16:34:46 GMT -->
 </html>

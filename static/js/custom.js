@@ -9,6 +9,8 @@ var open_portfolio_button = document.getElementById("open-portfolio");
 var back_home = document.getElementById("back-home");
 var open_about_button = document.getElementById("open-about");
 var close_about_button = document.getElementById("close");
+var open_skill_button = document.getElementById("open-skill");
+var close_skill_button = document.getElementById("close");
 var global_index = 0;
 
 /* ----------------------------------------------------------- */
@@ -536,6 +538,7 @@ if (open_about_button) {
     }
 }
 
+
 /* ----------------------------------------------------------- */
 /* CLOSE ABOUT SECTION
 /* ----------------------------------------------------------- */
@@ -561,6 +564,60 @@ if (close_about_button) {
         }, 500);
         setTimeout(function() {
             document.querySelector(".content-container").scrollTop = 0;
+        }, 850);
+    }
+}
+
+/* ----------------------------------------------------------- */
+/* OPEN skill SECTION
+/* ----------------------------------------------------------- */
+
+if (open_skill_button) {
+    document.getElementById("open-skill").onclick = function(e) {
+        clickPlay();
+        if (sound === true) {
+            if (mobile === true) {
+                paperaboutupmobile.play();
+            } else {
+                paperaboutup.play();
+            }
+        }
+        e.preventDefault();
+        setTimeout(function() {
+            document.getElementById("skill-overlay").classList.add("active");
+            document.getElementById("skill-contentcontainer").classList.add("active");
+        }, 100);
+        setTimeout(function() {
+            document.getElementById("skill-content").classList.add("active");
+        }, 300);
+    }
+}
+
+/* ----------------------------------------------------------- */
+/* CLOSE ABOUT SECTION
+/* ----------------------------------------------------------- */
+
+if (close_skill_button) {
+    document.getElementById("skill-close").onclick = function() {
+        clickPlay();
+        document.getElementById("skill-content").classList.remove("active");
+        setTimeout(function() {
+            if (sound === true) {
+                if (mobile === true) {
+                    paperaboutdownmobile.play();
+                } else {
+                    paperaboutdown.play();
+                }
+            }
+        }, 400);
+        setTimeout(function() {
+            document.getElementById("skill-overlay").classList.remove("active");
+        }, 400);
+        setTimeout(function() {
+            document.getElementById("skill-contentcontainer").classList.remove("active");
+        }, 500);
+        setTimeout(function() {
+            document.querySelector(".skill-content-container").scrollTop = 0;
         }, 850);
     }
 }
